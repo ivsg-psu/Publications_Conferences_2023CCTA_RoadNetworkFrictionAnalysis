@@ -15,7 +15,7 @@ Search for this, and you will find!
   <h2 align="center"> Analysis of Friction Utilization Within a Roadway Network Using Simulated Vehicle Trajectories
   </h2>
 
-<img src=".\Images\Friction_Analysis_Map_No_LC.png" alt="Friction Utilization Map" width="552" height="311">
+<img src=".\Images\Friction_Analysis_Map_No_LC.jpg" alt="Friction Utilization Map" width="552" height="311">
 
   <p align="center">
     The purpose of this code is to create a friction utilization map of the State College road network in the manuscript "Analysis of Friction Utilization Within a Roadway Network Using Simulated Vehicle Trajectories".
