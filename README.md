@@ -15,7 +15,7 @@ Search for this, and you will find!
   <h2 align="center"> Analysis of Friction Utilization Within a Roadway Network Using Simulated Vehicle Trajectories
   </h2>
 
-<img src=".\Images\Friction_Analysis_Map_No_LC.jpg" alt="Friction Utilization Map" width="1800" height="1070">
+<p align="center"><img src=".\Images\Friction_Analysis_Map_No_LC.jpg" alt="Friction Utilization Map" width="800" height="500">
 
   <p align="center">
     The purpose of this code is to create a friction utilization map of the State College road network in the manuscript "Analysis of Friction Utilization Within a Roadway Network Using Simulated Vehicle Trajectories".
@@ -49,13 +49,13 @@ Search for this, and you will find!
     <li><a href="structure">Repo Structure</a>
 	    <ul>
 	    <li><a href="#directories">Top-Level Directories</li>
-	    <li><a href="#dependencies">Dependencies</li>
-	    <li><a href="#functions">Functions</li>
 	    </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
 	    <ul>
-	    <li><a href="#examples">Examples</li>
+	    <li><a href="#Generate-the-friction-utilization-data-for-the-State-College-road-network">Generate the friction utilization data for the State College road network</li>
+	    </ul>
+	    <ul>
 	    <li><a href="#definition-of-endpoints">Definition of Endpoints</li>
 	    </ul>
     <li><a href="#license">License</a></li>
