@@ -66,7 +66,10 @@ Search for this, and you will find!
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Upload abstract
+In a road network, differences in road geometry, traffic patterns, and traffic laws require a range of typical maneuvers, each of which strongly affects the vehicle’s expected friction utilization. For example, very little tire force is required for driving straight on a low-speed road at a constant speed, performing no lane change maneuvers. Conversely, large tire forces may be required to navigate sharp highway curves, to stay in lane during sudden changes in lane offsets in a construction zone, or to stop abruptly from free-flow speed at a traffic light. Therefore, maps of this likely utilization are extremely valuable because they would reveal geolocations within a road network that require little relative friction utilization, and locations of large friction utilization. Such maps then may be useful to warn human drivers against lane changes on wet highway curves, to guide autonomous driving and/or driver assist algorithms toward geo-appropriate maneuver choices, or to modify as a function of weather the posted speed limits at road network locations whose normal maneuvering speed might violate friction limits. 
+
+The goal of this paper is to predict the areas of large friction utilization within a traffic network by using recorded vehicle trajectories. These trajectories are used as reference paths within a simulation of chassis dynamics along with a steering algorithm to predict the friction utilization as a function of road location. The friction utilization values are then mapped to geolocations to identify zones where friction utilization is largest. Knowing these locations allows the planning of maneuvers by both drivers and driving algorithms such that friction margins are maintained. The results show that, within a typical traffic network, there are significant and very highly localized areas where large friction utilization is typical.
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
