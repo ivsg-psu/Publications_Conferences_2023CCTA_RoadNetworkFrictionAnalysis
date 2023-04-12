@@ -56,14 +56,12 @@ Search for this, and you will find!
 	    <li><a href="#Generate-the-friction-utilization-data-for-the-State-College-road-network">Generate the friction utilization data for the State College road                    network</li>
 	    </ul>
 	    <ul>
-	    <li><a href="#Generate-the-friction-utilization-map-for-the-State-College-road-network">Generate the friction utilization map for the State College road                    network</li>
+	    <li><a href="#Generate-the-friction-utilization-map-of-the-State-College-road-network">Generate the friction utilization map of the State College road network</li>
 	    </ul>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
