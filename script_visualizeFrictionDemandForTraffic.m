@@ -12,7 +12,7 @@ close all
 clc
 
 %% Add path to dependencies
-addpath('./Datafiles');
+addpath('./Data');
 
 %% Flag trigger
 % Decide if you want to plot the min, max, or mean
@@ -28,9 +28,11 @@ flag.plotRR = false; % flag to plot the rear right tire friction
 
 % State machine that decides the variables to plot
 load trajectory_data_3DOF_NoLC.mat
+index = 
 if flag.plotFL
     if flag.plotMax
         friction_val = 'friction_fl_max';
+
     elseif flag.plotMin
         friction_val = 'friction_fl_min';
     elseif flag.plotMean
