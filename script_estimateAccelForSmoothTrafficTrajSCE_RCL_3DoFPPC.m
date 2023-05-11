@@ -21,7 +21,6 @@ addpath('./Utilities/DB Lib'); % all the functions and wrapper class
 addpath('./Utilities/VD Lib');
 addpath('./Utilities/VD Lib/Dualtrack');
 addpath('./Utilities/Path Lib');
-addpath('./Utilities/Circle Lib');
 addpath('./Utilities/UTM Lib');
 addpath('./Utilities/MinMaxMean')
 
