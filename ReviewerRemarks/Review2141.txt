@@ -1,0 +1,36 @@
+Reviewer 1 of CCTA 2023 submission 211
+
+Comments to the author
+======================
+
+The authors proposed a method to analyze the friction
+utilization of a road network was proposed. The following
+points may help to improve the quality of your work:
+
+1) The 3 DOF model doesn't consider the changes in the
+normal tire forces, which could be caused by the vehicle's
+pitch and roll dynamics and can significantly affect the
+longitudinal and lateral tyre forces. This will affect the
+friction utilization, especially in safety critical
+scenarios.
+
+2) As a nominal road condition with a maximum friction of
+1.0 was assumed, the application of the developed map is
+not clear when the weather changes the road surface to
+wet/snow/icy. The friction utlization map may significantly
+differ in such situations, which are in fact important
+situations for vehicle safety. These cases aren't
+considered.
+
+3) Maintaining friction margins require the knowledge of
+the maximum tire-road friction coefficient, but the work
+assumed it to be 1.0. Therefore, it isn't clear how it can
+be used to plan vehicle maneuvres such that friction
+margins are maintained. 
+
+The work presented clearly involved significant engineering
+work. However, scientific contribution is questionable.
+Considering the above points (and possibly others) may help
+on this front.
+
+Good luck.

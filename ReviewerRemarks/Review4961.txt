@@ -1,0 +1,20 @@
+Reviewer 13 of CCTA 2023 submission 211
+
+Comments to the author
+======================
+
+The double simulation procedure is well explained and
+reproducible, and the work methodology is coherent
+throughout the paper.
+There only one part less clear: in section 2A, a 7-DOF
+vehicle model is introduced, however, it is unclear which
+are the states of this model, and how the single-wheel
+rotational speed is controlled by the wheel slip controller
+if those dynamics are neglected in the simulation.
+Also, it comes to the mind of the reader to ask why did you
+use a brush tire model, especially concerning the
+computational problems you encountered, while the Pacejka
+model is much simpler computationally wise.
+
+Minor comment: 5 lines after defining equation (5), you
+refer to it as equation (4)

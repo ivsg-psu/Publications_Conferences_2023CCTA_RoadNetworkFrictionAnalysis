@@ -1,0 +1,121 @@
+Reviewer 4 of CCTA 2023 submission 211
+
+Comments to the author
+======================
+
+The paper proposes a method to map typical tire friction
+utilization in a road network. The proposed method uses a
+traffic simulator to generate common vehicle kinematic
+trajectories. Friction information is obtained by using the
+kinematic trajectories as references for a position
+controlled dynamic vehicle model.
+
+While the method is potentially interesting to analyze the
+safety of road networks, the presentation does not do
+justice to the work.
+More worringly, results seem to match common sense
+qualitatively, but not quantitatively.
+Furthermore, the proposed tool usefulness is not
+highlighted in the presented results.
+
+In the following, I report comments for each section.
+
+I) Introduction
+The usefulness of the generated likely friction utilization
+is not clearly outlined.
+For example: how would it be useful in warning human
+drivers? Would it be used by the regulatory agencies to
+impose stricter speed limits? If so, it would help
+regulatory agencies, not drivers.
+Would this analysis be performed during the design phase of
+roads? If not, when? I understand the exploitation of the
+map is not the focus of the paper but a more punctual
+contextualization is necessary. 
+
+“Specifically, it is an assumption of this work and of
+federal roadway design guides [19] that, to avoid skidding
+or spinning out, the friction margin:” is this an
+assumption? Isn't this the physical behavior of
+vehicles/models of vehicles?
+
+The literature analysis is not clearly connected to the
+presented work.
+A relevant amount of time is spent discussing major causes
+of accidents, without highlighting why this is relevant to
+the presented work. Similarly, a specific ADAS system (ISA)
+is presented in detail, but it’s not clear how this is
+affected by the presented work. These are examples that
+show how friction estimates can be used, but do not present
+the innovative contributions of the paper, nor highlight
+topics not addressed by the literature.
+
+The conclusion argues that there is a lack of literature
+that discusses what to do if friction estimates are wrong,
+however this is not proven by the presented literature. No
+mention is given to robust vehicle dynamics control
+approaches.
+The case of loss of connection with a friction database is
+presented as an issue solved by this work, but the proposed
+method cannot run online on the vehicle and thus needs a
+connection to download such map, which is effectively a
+database.
+
+Deeply revising this section is fundamental for the
+comprehension of the article and its contribution.
+
+
+
+
+II) Methods
+From the introduction it is not clear why a traffic
+simulation is needed. Why can’t a simulation with a single
+vehicle be used to evaluate maximum friction utilization?
+I am guessing that this allows to statistically predict
+where accelerations and decelerations occur (if this is the
+case, this is not clearly presented).
+Does the simulator give more insight into these conditions
+with respect to common sense predictions? (i.e. a traffic
+simulator is not necessary to predict that braking actions
+will frequently be taken in the vicinity of traffic lights
+while accelerations on highway ramps).
+
+The OSM acronym is never defined.
+
+If possible, cite the work related to the development of
+the traffic simulator and its calibration instead of just
+mentioning the authors.
+
+"This was an involved process that is the topic of a
+concurrent paper."
+I suggest some level of explanation is given on this
+process, as this would help to make the paper more self
+contained and to easily understand it.
+
+When presenting the models employed it is stated that the
+3DOF model directly controls the wheel slip, which however
+is not present in the presented equations.
+Rather, equation (5) shows torque inputs.
+I am guessing the model with torque inputs is the 7 DOF
+one.
+No detail is given on which model is used to represent the
+slip-force relationship, which is fundamenteal, given the
+nature of this work.
+
+“only reference vehicle trajectories that had no lane
+changes were analyzed” why was this choice made?
+
+What is a section ID ?
+
+III) Results
+Results only show examples of results that match common
+sense. It would however be interesting to see results
+providing more insight. Is this tool capable of
+highlighting unexpected dangers?
+For example: was the road section in Figure 7 predictably
+dangerous?
+The analysis of Figure 3, as presented, seems to suggest
+that the method is not capable of representing realistic
+dynamics in some contexts, like stop signs and traffic
+lights.
+More details should be given on the reasons and the effects
+of this shortcomings.

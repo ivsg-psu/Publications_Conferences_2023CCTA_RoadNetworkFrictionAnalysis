@@ -1,0 +1,20 @@
+Comments to author (Associate Editor)
+=====================================
+
+The reviewers have provided comments on the paper.  While
+they all agree on the quality of the presentation and the
+potential interest of the work. Two reviewers have raised
+concerns on the quality of the work and very useful
+feedbacks.  In particular, the authors should consider, the
+following aspects:
+
+- neglecting the vertical load when discussing tyre
+characteristics may lead to wrong conclusions. This should
+be considered.
+
+- The method should not only consider nominal road
+conditions, but wet/snowy and icy roads are important to
+consider.
+
+- The need for a traffic simulator should be better
+discussed. 
