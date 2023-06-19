@@ -28,7 +28,7 @@ flag.plotRR = false; % flag to plot the rear right tire friction
 
 % State machine that decides the variables to plot
 load trajectory_data_3DOF_NoLC.mat
-index = 
+index = 1;
 if flag.plotFL
     if flag.plotMax
         friction_val = 'friction_fl_max';
@@ -86,8 +86,8 @@ wgs84 = wgs84Ellipsoid;
     lat0,lon0,h0,wgs84);
 
 %% Create the color map used to plot the friction
-number_of_colormaps = 101;
-load color_map.mat
+% number_of_colormaps = 101;
+% load color_map.mat
 
 %% Plot the friction demand data
 % Find minimum and maximum friction demand
@@ -121,3 +121,35 @@ geolimits([min_lat-buffer_spacing_lat max_lat+buffer_spacing_lat],...
 colormap(FrictionDemandColorMap)
 colorbar;
 caxis([min_friction_demand, max_friction_demand]);
+
+% Set the zoom conditions for each published figure
+temp_axis_handle = gca;
+
+%% FIGURE 2 - all of SC max
+set(temp_axis_handle,'ZoomLevel',12.5); 
+
+%% FIGURE 3 - Urban max
+set(temp_axis_handle,'ZoomLevel',16.874999999994564); 
+set(temp_axis_handle,'MapCenter',[40.794744990941759 -77.858862686348616]);
+set(temp_axis_handle,'Position',[0.127819481680071 0.110000000000000 0.706009830205541 0.815000000000000])
+%% FIGURE 4 - Highway max
+set(temp_axis_handle,'ZoomLevel',16.874999999996522); 
+set(temp_axis_handle,'MapCenter',[40.822162771106470 -77.874142283035283]);
+set(temp_axis_handle,'Position',[0.127819481680071 0.110000000000000 0.706009830205541 0.815000000000000])
+
+%% FIGURE 5 - Intersection max
+set(temp_axis_handle,'ZoomLevel',18); 
+set(temp_axis_handle,'MapCenter',[40.781002670264115 -77.801264224887376]);
+set(temp_axis_handle,'Position',[0.127819481680071 0.110000000000000 0.706009830205541 0.815000000000000]);
+
+%% FIGURE 6 - Hawbacker Drive
+set(temp_axis_handle,'ZoomLevel',17.75); 
+set(temp_axis_handle,'MapCenter',[40.810297657317086 -77.914274900155547]);
+set(temp_axis_handle,'Position',[0.127819481680071 0.110000000000000 0.706009830205541 0.815000000000000]);
+
+%% FIGURE 7 - Interstate curve max
+set(temp_axis_handle,'ZoomLevel',15.875); 
+set(temp_axis_handle,'MapCenter',[40.803776520154578 -77.825203133190328]);
+set(temp_axis_handle,'Position',[0.127819481680071 0.110000000000000 0.706009830205541 0.815000000000000]);
+
+
